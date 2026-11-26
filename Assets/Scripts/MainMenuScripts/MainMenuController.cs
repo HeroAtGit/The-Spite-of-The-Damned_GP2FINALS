@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 using static UnityEngine.Rendering.DebugUI;
 
 public class MainMenuController : MonoBehaviour
@@ -60,7 +62,6 @@ public class MainMenuController : MonoBehaviour
             }
         }
     }
-
 
     public void OpenSettingsPanel()
     {
@@ -156,5 +157,11 @@ public class MainMenuController : MonoBehaviour
             Time.timeScale = 1f;
         });
         currentTween.OnKill(() => currentTween = null);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game is exiting");
     }
 }
