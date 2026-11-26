@@ -23,11 +23,13 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] float duration = 0.4f;
 
     private Sequence currentTween;
-    private bool isOpen;
+    private bool isSettingsOpen;
+    private bool isCreditsOpen;
 
     private void Awake()
     {
-        isOpen = false;
+        isSettingsOpen = false;
+        isCreditsOpen = false;
 
         SettingsGroup.alpha = 0;
         SettingsGroup.interactable = false;
@@ -44,9 +46,25 @@ public class MainMenuController : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    private void Update()
+    {
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (isSettingsOpen)
+            {
+                CloseSettingsPanel();
+            }
+            else if (isCreditsOpen)
+            {
+                CloseCreditsPanel();
+            }
+        }
+    }
+
+
     public void OpenSettingsPanel()
     {
-        isOpen = true;
+        isSettingsOpen = true;
         currentTween?.Kill();
 
         SettingsPanel.position = closedTarget[0].position;
@@ -69,7 +87,7 @@ public class MainMenuController : MonoBehaviour
 
     public void OpenCreditsPanel()
     {
-        isOpen = true;
+        isCreditsOpen = true;
         currentTween?.Kill();
 
         ScrollRect scrollRect = CreditsPanel.GetComponentInChildren<ScrollRect>(true);
@@ -100,7 +118,7 @@ public class MainMenuController : MonoBehaviour
 
     public void CloseSettingsPanel()
     {
-        isOpen = false;
+        isSettingsOpen = false;
         currentTween?.Kill();
 
         SettingsGroup.interactable = false;
@@ -121,7 +139,7 @@ public class MainMenuController : MonoBehaviour
 
     public void CloseCreditsPanel()
     {
-        isOpen = false;
+        isCreditsOpen = false;
         currentTween?.Kill();
 
         CreditsGroup.interactable = false;
