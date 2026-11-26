@@ -72,6 +72,14 @@ public class MainMenuController : MonoBehaviour
         isOpen = true;
         currentTween?.Kill();
 
+        ScrollRect scrollRect = CreditsPanel.GetComponentInChildren<ScrollRect>(true);
+        if (scrollRect != null)
+        {
+            Canvas.ForceUpdateCanvases();
+            scrollRect.StopMovement();
+            scrollRect.verticalNormalizedPosition = 1f;
+        }
+
         CreditsPanel.position = closedTarget[1].position;
         CreditsGroup.alpha = 0f;
         Overlay.alpha = 0f;
