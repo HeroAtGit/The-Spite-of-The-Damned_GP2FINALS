@@ -1013,13 +1013,14 @@ GameObject:
   - component: {fileID: 609632270}
   - component: {fileID: 609632272}
   - component: {fileID: 609632271}
+  - component: {fileID: 609632273}
   m_Layer: 5
   m_Name: OverlayDim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &609632270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1077,6 +1078,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609632269}
   m_CullTransparentMesh: 1
+--- !u!225 &609632273
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609632269}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &625490166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1138,7 @@ GameObject:
   - component: {fileID: 628740949}
   - component: {fileID: 628740948}
   - component: {fileID: 628740947}
+  - component: {fileID: 628740950}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -1195,7 +1209,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 628740948}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1623493873}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: OpenSettingsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &628740948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,6 +1260,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628740945}
   m_CullTransparentMesh: 1
+--- !u!225 &628740950
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628740945}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &633516930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1284,7 @@ GameObject:
   - component: {fileID: 633516935}
   - component: {fileID: 633516934}
   - component: {fileID: 633516933}
+  - component: {fileID: 633516936}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -1355,6 +1394,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633516930}
   m_CullTransparentMesh: 1
+--- !u!225 &633516936
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633516930}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &711525415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 741549434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1623493873}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: CloseSettingsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &741549434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2103,6 +2166,7 @@ GameObject:
   - component: {fileID: 1013014459}
   - component: {fileID: 1013014458}
   - component: {fileID: 1013014457}
+  - component: {fileID: 1013014460}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -2212,6 +2276,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013014455}
   m_CullTransparentMesh: 1
+--- !u!225 &1013014460
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013014455}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1042634792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2899,7 @@ GameObject:
   - component: {fileID: 1420437459}
   - component: {fileID: 1420437461}
   - component: {fileID: 1420437460}
+  - component: {fileID: 1420437462}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -2888,6 +2965,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420437458}
   m_CullTransparentMesh: 1
+--- !u!225 &1420437462
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420437458}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1422568444
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3317,7 @@ GameObject:
   - component: {fileID: 1618964594}
   - component: {fileID: 1618964593}
   - component: {fileID: 1618964592}
+  - component: {fileID: 1618964595}
   m_Layer: 5
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -3337,6 +3427,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618964590}
   m_CullTransparentMesh: 1
+--- !u!225 &1618964595
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618964590}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1623493871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3346,6 +3448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623493872}
+  - component: {fileID: 1623493873}
   m_Layer: 0
   m_Name: MainMenuController
   m_TagString: Untagged
@@ -3368,6 +3471,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1623493873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623493871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0adea9ad5597c24b9f179b5808f7b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuController
+  SettingsPanel: {fileID: 1420437459}
+  CreditsPanel: {fileID: 0}
+  openTarget: {fileID: 1975091632}
+  closedTarget: {fileID: 576200717}
+  Overlay: {fileID: 609632273}
+  SettingsGroup: {fileID: 1420437462}
+  CreditsGroup: {fileID: 0}
+  buttonGroups:
+  - {fileID: 633516936}
+  - {fileID: 628740950}
+  - {fileID: 1618964595}
+  - {fileID: 1013014460}
+  buttonTransform: []
+  duration: 0.4
+  stagger: 0.08
 --- !u!1 &1701063653
 GameObject:
   m_ObjectHideFlags: 0
