@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2114bdc8544297b417dfefe9f1e410, type: 3}
+  m_Name: WikiStyles
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_StyleSheet
+  m_StyleList:
+  - m_Name: WikiBody
+    m_HashCode: 687045196
+    m_OpeningDefinition: <size=24><color=#000000>
+    m_ClosingDefinition: </color></size>
+    m_OpeningTagArray: 3c00000073000000690000007a000000650000003d00000032000000340000003e0000003c000000630000006f0000006c0000006f000000720000003d000000230000003000000030000000300000003000000030000000300000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e0000003c0000002f00000073000000690000007a000000650000003e000000
+  - m_Name: WikiBold
+    m_HashCode: 687045465
+    m_OpeningDefinition: <b>
+    m_ClosingDefinition: </b>
+    m_OpeningTagArray: 3c000000620000003e000000
+    m_ClosingTagArray: 3c0000002f000000620000003e000000
+  - m_Name: WikiItalic
+    m_HashCode: 658892454
+    m_OpeningDefinition: <i>
+    m_ClosingDefinition: </i>
+    m_OpeningTagArray: 3c000000690000003e000000
+    m_ClosingTagArray: 3c0000002f000000690000003e000000
+  - m_Name: WikiHighlight
+    m_HashCode: 489024588
+    m_OpeningDefinition: <color=#FFD700><b>
+    m_ClosingDefinition: "\n\t</b></color>\n"
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000004600000046000000440000003700000030000000300000003e0000003c000000620000003e000000
+    m_ClosingTagArray: 0a000000090000003c0000002f000000620000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e0000000a000000
+  - m_Name: Normal
+    m_HashCode: -1183493901
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
