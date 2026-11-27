@@ -72,4 +72,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d2b595f7b8f6d4487b0b2985e74981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeadzoneScript
-  deadZone: -14
+  deadZone: -12
